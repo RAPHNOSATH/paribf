@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/nom_equipeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/bleue"
+        android:textStyle="bold" />
+    <TextView
+        android:text="VS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bleue"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/nom_equipeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bleue"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+
+</LinearLayout>

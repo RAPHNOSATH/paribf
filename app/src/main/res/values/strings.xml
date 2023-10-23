@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PariBF</string>
+    <string name="edit">Edition</string>
+    <string name="preference">Preference</string>
+    <string name="hier">Hier</string>
+    <string name="aujourd_huit">Aujourd\'huit</string>
+    <string name="demain">Demain</string>
+    <string name="endirect">En Direct</string>
+    <string name="cotes">Cotes</string>
+    <string name="forms">Formulaire d\'inscription</string>
+    <string name="prenom">Prénom</string>
+    <string name="nom">Nom</string>
+    <string name="password">Mot de passe</string>
+    <string name="password1">confirmez le mot de passe</string>
+    <string name="inscrire">s\'inscrire</string>
+    <string name="connecter">se connecter</string>
+</resources>

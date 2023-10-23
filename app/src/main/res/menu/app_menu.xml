@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/edit"
+        android:title="@string/edit"
+        android:icon="@android:drawable/ic_menu_edit"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/preference"
+        android:title="@string/preference"
+        android:icon="@android:drawable/ic_menu_preferences"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/hier"
+        android:title="@string/hier"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/aujourd_huit"
+        android:title="@string/aujourd_huit"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/demain"
+        android:title="@string/demain"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/endirect"
+        android:title="@string/endirect"
+        app:showAsAction="collapseActionView"/>
+</menu>
