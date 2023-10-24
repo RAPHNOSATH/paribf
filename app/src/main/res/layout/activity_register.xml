@@ -61,22 +61,6 @@
             android:touchscreenBlocksFocus="true"
             android:orientation="vertical"
             android:layout_below="@+id/id_txt">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:text="error"
-                android:id="@+id/id_error_register"
-                android:textColor="@color/red"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:visibility="gone"
-                android:gravity="center"
-                android:textSize="20dp">
-
-            </TextView>
-
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -233,6 +217,14 @@
                 </TextView>
             </LinearLayout>
         </LinearLayout>
-
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_progressbar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone">
+        </ProgressBar>
     </RelativeLayout>
 </ScrollView>

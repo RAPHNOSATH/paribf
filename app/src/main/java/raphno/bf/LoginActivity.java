@@ -4,11 +4,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -28,32 +30,31 @@ import java.util.Map;
 import java.util.Set;
 
 public class LoginActivity extends AppCompatActivity {
-    private TextInputEditText users, userpassword ;
-    private MaterialAutoCompleteTextView login_error;
+    private TextInputEditText useremail, userpassword ;
 
     private Button loginUser;
 
-    private String username, password;
-    private DatabaseManager databaseManager;
+    private String email, password;
+   // private DatabaseManager databaseManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        users = findViewById(R.id.id_usersConnect);
+        useremail = findViewById(R.id.id_usersConnect);
         userpassword = findViewById(R.id.id_passwordConnect);
-        login_error = findViewById(R.id.id_error_login);
+        ProgressBar progressBar = findViewById(R.id.id_progressbar1);
+
         loginUser = findViewById(R.id.btn_login);
 
-        databaseManager = new DatabaseManager(getApplicationContext());
+        //databaseManager = new DatabaseManager(getApplicationContext());
 
         loginUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                username = users.getText().toString();
+                email = useremail.getText().toString();
                 password = userpassword.getText().toString();
 
-                connectUser();
             }
         });
     }
@@ -61,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
         finish();
     }
-    public void onApiResponse(JSONObject response){
+    /*public void onApiResponse(JSONObject response){
         Boolean success = null;
         String error = "";
 
@@ -108,5 +109,5 @@ public class LoginActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.first_interface, menu);
         return true;
-    }
+    }*/
 }

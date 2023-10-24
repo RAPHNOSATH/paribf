@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "744431889100",
+    "project_id": "paribf-9a273",
+    "storage_bucket": "paribf-9a273.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744431889100:android:c1c809f2299479d685f069",
+        "android_client_info": {
+          "package_name": "raphno.bf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSeREmQDd0pPyjpKmDUZVt5udz8EAlo_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
